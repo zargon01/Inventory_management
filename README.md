@@ -9,8 +9,6 @@ An inventory management system built with Flask and MySQL for tracking products,
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
