@@ -1,0 +1,20 @@
+-- Create the Inventory_Management database
+CREATE DATABASE Inventory_Management;
+
+-- Use the newly created database
+USE Inventory_Management;
+
+-- Create the Inventory table
+CREATE TABLE Inventory (
+    InventoryID INT AUTO_INCREMENT,
+    Name VARCHAR(50),
+    Category VARCHAR(255),
+    Unit_Price DECIMAL(6, 2), -- Using DECIMAL for precise monetary values
+    Stock_Quantity INT(4),
+    Inventory_Value DECIMAL(7, 2), -- Using DECIMAL for precise monetary values
+    Reorder_Level INT(5),
+    Reorder_Time_Days INT(3),
+    Reorder_Quantity INT(5),
+    PRIMARY KEY (InventoryID)
+);
+select * from Inventory;
