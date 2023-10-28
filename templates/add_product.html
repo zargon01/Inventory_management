@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Add Product</h2>
+    <form method="POST">
+        <label for="name">Name: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp</label>
+        <input type="text" name="name" id="inputbox" required>
+        <br><br>
+        <label for="description">Description: &nbsp; &nbsp</label>
+        <input type="text" name="description" id="inputbox">
+        <br><br>
+        <label for="quantity">Quantity: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp</label>
+        <input type="number" name="quantity" id="inputbox" required>
+        <br><br>
+        <input class="button" type="submit" value="Add Product">
+    </form>
+{% endblock %}
