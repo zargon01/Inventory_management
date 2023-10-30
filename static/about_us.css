@@ -1,0 +1,45 @@
+/* Styling for the about us page */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member {
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    max-width: 60%;
+    border-radius: 100%;
+}
+
+.member-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Center the project guide's photo */
+.project-guide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    border-radius: 100%;
+    
+}
+
+/* Style for project guide's description */
+.project-guide-description {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f394ba;
+    text-align: center;
+}

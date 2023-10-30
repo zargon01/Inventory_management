@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="heading">
+        <h2>Project Description</h2>
+    </div>
+
+    
+    <div class="page-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#how-to-use">How to Use Application</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#project-structure">Project Structure</a></li>
+                <li><a href="#technologies">Concepts and Technologies Used</a></li>
+                <li><a href="#dependencies">Dependencies</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+            </ol>
+        </div>
+        <div id="how-to-use" class="how-to-use">
+            <h3>How to Use Application</h3>
+            <p>
+                To use the Inventory Management application, follow these steps:
+            </p>
+            <ol>
+                <li>Access the application by visiting the home page.</li>
+                <li>View the list of products, including their names, descriptions, and quantities.</li>
+                <li>To add a new product, click the "Add Product" link and provide the necessary details.</li>
+                <li>To edit an existing product, click the "Edit" link next to the product, and update the information.</li>
+                <li>To delete a product, click the "Delete" link next to the product.</li>
+            </ol>
+        </div>
+        <div id="features" class="features">
+            <h3>Features</h3>
+            <p>
+                The Inventory Management application offers the following features:
+            </p>
+            <ul>
+                <li>View a list of products with their names, descriptions, and quantities.</li>
+                <li>Add new products with details.</li>
+                <li>Edit existing product information.</li>
+                <li>Delete products when needed.</li>
+            </ul>
+        </div>
+        
+        <div id="project-structure" class="project-structure">
+            <h3>Project Structure</h3>
+            <br><p>The project structure of Inventory Management is as follows: </p><br>
+            <pre>
+        inventory_management_project/
+        │
+        ├── app.py                                              # The main Flask application script.
+        ├── config.py                                           # Configuration settings for your Flask app.
+        ├── models.py                                           # Defines the database models
+        │
+        ├── static/                                             # Static files like CSS, and images.
+        │   ├── style.css                                       # Global CSS styles.
+        │   ├── add_edit_product.css                            # CSS styles for add and edit product pages.
+        │   ├── description.css                                 # CSS styles for the "Description" page.
+        │   ├── favicon.ico                                     # Favicon icon.
+        │
+        ├── templates/                                          # HTML templates for your application.
+        │   ├── base.html                                       # Base template used for all pages.
+        │   ├── index.html                                      # Template for displaying the list of products.
+        │   ├── add_product.html                                # Template for adding a product.
+        │   ├── edit_product.html                               # Template for editing a product.
+        │   ├── description.html                                # Template for the "Description" page.
+        │   ├── about_us.html                                   # Template for the "About Us" page.
+            </pre>
+        </div>
+        
+
+
+
+        <div id="technologies" class="technologies">
+            <h3>Concepts and Technologies Used</h3>
+            <p>
+                The Inventory Management application uses the following technologies and concepts:
+            </p>
+            <ul>
+                <li>Flask: A Python web framework for building web applications.</li>
+                <li>SQLAlchemy: An Object-Relational Mapping (ORM) library for database interaction.</li>
+                <li>MySQL: The database used for data storage.</li>
+                <li>HTML and CSS: For creating the user interface and styling the application.</li>
+            </ul>
+        </div>
+        <div id="dependencies" class="dependencies">
+            <h3>Dependencies</h3>
+            <p>
+                The application relies on the following dependencies:
+            </p>
+            <ul>
+                <li>Flask: Web framework for Python.</li>
+                <li>Flask-SQLAlchemy: SQLAlchemy integration for Flask.</li>
+                <li>MySQL: The database management system.</li>
+            </ul>
+        </div>
+        <div id="use-cases" class="use-cases">
+            <h3>Use Cases</h3>
+            <p>
+                The Inventory Management application can be useful in various scenarios, including:
+            </p>
+            <ul>
+                <li>Small businesses managing their product inventory.</li>
+                <li>Retail stores keeping track of available products.</li>
+                <li>Warehouses monitoring stock levels.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

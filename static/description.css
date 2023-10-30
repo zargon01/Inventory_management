@@ -1,0 +1,55 @@
+
+
+/* Add your custom styles here */
+.heading {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.page-content {
+    background-color: #FFF6F6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.table-of-contents {
+    background-color: #FFDFDF;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-of-contents ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.project-structure pre {
+    white-space: pre-wrap;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project-structure pre code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.how-to-use, .features, .technologies, .dependencies, .use-cases, .project-structure {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.how-to-use h3, .features h3, .technologies h3, .dependencies h3, .use-cases h3,.project-structure h3 {
+    background-color: #FFDFDF;
+    color: black;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}

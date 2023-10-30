@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Edit Product</h2>
+    <form method="POST">
+        <label for="name">Name: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp</label>
+        <input type="text" name="name" id="inputbox" value="{{ product.name }}" required>
+        <br><br>
+        <label for="description">Description: &nbsp; &nbsp</label>
+        <input type="text" name="description" id="inputbox" value="{{ product.description }}">
+        <br><br>
+        <label for "quantity">Quantity: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp</label>
+        <input type="number" name="quantity" id="inputbox" value="{{ product.quantity }}" required>
+        <br><br>
+        <input class="button" type="submit" value="Update Product">
+    </form>
+{% endblock %}
